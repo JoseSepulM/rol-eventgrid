@@ -1,0 +1,11 @@
+type Query {
+  _dummy: String
+}
+
+type Mutation {
+  updateRol(id: ID!, input: RolCreateInput!): String
+}
+
+input RolCreateInput {
+  rol : String
+}
