@@ -4,6 +4,8 @@ type Query {
 
 type Mutation {
   updateRol(id: ID!, input: RolCreateInput!): String
+  createRol(input: RolCreateInput!): String
+  deleteRol(id: ID!, entity : String) : String
 }
 
 input RolCreateInput {
